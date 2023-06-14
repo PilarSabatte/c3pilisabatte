@@ -1,0 +1,243 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,500;0,700;1,300&display=swap');
+
+  * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Infant';
+    margin: 0;
+}
+
+nav {
+    font-family: 'Cormorant Infant', serif;
+    width: 100vw;
+     color: #9f6629;
+    height: 10vh;
+    background-color: #23194e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mostrar {
+    display: flex;
+    flex-direction: column;
+    min-height: 25vh;
+    justify-content: space-evenly;
+    /*en un column, esta propiedad que maneja usualmente la alineación x, empieza a manera la y*/
+    position: fixed;
+    background-color:#23194e;
+    left: 0;
+    top: 16vh;
+    padding: 5vw;
+    width: 100vw;
+}
+
+nav div {
+
+    display: flex;
+    width: 24.11%;
+    justify-content: space-between;
+}
+
+nav,
+header,
+main {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    /*regular el espacio entre diferentes filas de un contenedor con elementos con flex*/
+    height: 100vh;
+    margin-bottom: 20px;
+}
+
+
+.lightboxOverlay{
+    /*el color q toma al abrir la galería*/
+background-color:#23194e;
+}
+
+section div {
+    width: 45.83%;
+}
+
+section div img , video{
+    width: 100%;
+}
+
+header {
+    font-family: 'Cormorant Infant', serif;
+    height: 43vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    margin: 0;
+font-family: 'Cormorant Infant', serif;
+   
+}
+
+h1,
+header h3,
+nav a,
+header a {
+    line-height: 110%;
+    color:#08041b;
+    }
+
+nav h1 {
+
+    font-weight: 500;
+}
+
+header h1 {
+    font-family: 'Cormorant Infant', serif;
+
+}
+
+header h3 {
+    font-family: 'Cormorant Infant', serif;
+    text-transform: uppercase;
+    color:#08041b;
+    letter-spacing: 5px;
+
+}
+
+header p {
+    font-size: 20px;
+}
+
+header a,
+nav a {
+    font-family: 'europa';
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+header a {
+    text-align: center;
+    display: flex;
+    font-family: 'europa';
+    font-weight: bold;
+    color: #827d99;
+}
+
+nav span { display: none;}
+
+/*oculto en la generalidad el menú hamburguesa*/
+/*1:19*/
+.icon-menu::before {
+ 
+    color: white;
+    font-size: 2vw;
+}
+
+
+span.icon-menu:hover {
+    cursor: pointer;
+ }
+
+@media(max-width: 1024px) {
+
+        nav div {
+            width: 50%;
+        }
+
+
+    main section {
+        
+        
+        height: auto;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    section {
+
+        height: auto;
+    }
+
+    section div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    nav div {
+        display: none;
+    }
+
+    /*desaparece el grupo de links*/
+
+    nav span {
+        display: inline;
+    }
+
+    /*vuelvo a mostrar el menú hamburguesa*/
+
+
+    /*estoy quitando el height porque queda mal en una pantalla pequeña*/
+
+}
+
+img:hover {
+
+   scale: 1.1;
+ 
+    }
+
+    
+ nav a {
+    color: rgb(255, 255, 255);
+    transition-property: color;
+    transition-duration: 0.15s;
+}
+
+nav a:hover {
+    color: rgb(183, 29, 29);
+    
+}
+
+footer{
+    width: 100%;
+    background-color: #23194e;
+    height: 50vh;
+    text-align: center;
+    color: white;
+  
+    
+}
+
+
+
+
+
+
+
+
+
+
